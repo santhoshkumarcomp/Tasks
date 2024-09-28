@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(218, 0, 203);
+  color: white;
+}
+.card {
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  top: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0em;
+  width: 300px;
+  height: 200px;
+  background-color: green;
+  border-radius: 20px;
+  border-color: rgb(30, 254, 116);
+}
