@@ -38,7 +38,7 @@ section {
   height: 100vh;
   padding-top: 36px;
 }
-aside {
+.aside {
   position: fixed;
   top: 57px;
   left: 5px;
@@ -70,6 +70,36 @@ main {
   padding-left: 30vh;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
   z-index: 0;
+}
+.ico {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  #aside-bar {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  #title {
+    padding-left: 5vh;
+    font-size: large;
+  }
+  main {
+    padding-left: 2vh;
+  }
+  a {
+    display: none;
+  }
+  .ico {
+    display: block;
+  }
+  .ico:hover + a,
+  a:hover {
+    /* padding: 20px; */
+    display: block;
+    z-index: 5;
+  }
 }
 .nav-bar {
   position: fixed;
