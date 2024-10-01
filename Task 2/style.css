@@ -7,6 +7,9 @@ a {
   color: #f9f9fa;
   text-decoration: none;
 }
+/* #home {
+  margin-top: 8px;
+} */
 #title {
   position: fixed;
   font-size: xx-large;
@@ -32,11 +35,12 @@ body {
   height: 1000px;
 }
 section {
-  margin-top: 80px;
+  height: 100vh;
+  padding-top: 36px;
 }
 aside {
-  position: relative;
-  top: 72px;
+  position: fixed;
+  top: 57px;
   left: 5px;
   float: left;
   background-color: #f9f9fa;
@@ -60,8 +64,9 @@ aside {
 main {
   /* background-color: #f9f9fa; */
   position: relative;
-  top: 50px;
+
   color: #f9f9fa;
+  padding-top: 5vh;
   padding-left: 30vh;
   box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
   z-index: 0;
