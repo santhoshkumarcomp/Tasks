@@ -73,6 +73,7 @@ main {
 }
 .ico {
   display: none;
+  color: rgb(250, 250, 250);
 }
 @media screen and (max-width: 850px) {
   #aside-bar {
