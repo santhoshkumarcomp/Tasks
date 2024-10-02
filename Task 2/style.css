@@ -86,8 +86,12 @@ main {
     padding-left: 5vh;
     font-size: large;
   }
+  body {
+    height: 1000px;
+  }
   main {
     padding-left: 2vh;
+    height: 200vh;
   }
   a {
     display: none;
@@ -101,7 +105,12 @@ main {
     display: block;
     z-index: 5;
   }
+  section {
+    height: 100vh;
+    padding-top: 36px;
+  }
 }
+
 .nav-bar {
   position: fixed;
   width: 100%;
@@ -119,4 +128,48 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media screen and (max-width: 850px) {
+  #aside-bar {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  #title {
+    padding-left: 5vh;
+    font-size: large;
+  }
+  body {
+    height: 1000px;
+  }
+  main {
+    padding-left: 2vh;
+    height: 200vh;
+  }
+  a {
+    display: none;
+  }
+  .ico {
+    display: block;
+  }
+  .ico:hover + a,
+  a:hover {
+    /* padding: 20px; */
+    display: block;
+    z-index: 5;
+  }
+  section {
+    height: 100vh;
+    padding-top: 36px;
+  }
+  footer {
+    color: white;
+    font-size: x-large;
+    top: 1330px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
