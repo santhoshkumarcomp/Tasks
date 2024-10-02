@@ -18,6 +18,9 @@ a {
   align-items: center;
   margin-left: 27vh;
   z-index: 1;
+  padding-left: 20px;
+  color: #f9f9fa;
+  text-decoration: none;
 }
 menu {
   /* padding: 20px; */
@@ -101,10 +104,7 @@ footer {
   .aside {
     display: none;
   }
-  #title {
-    padding-left: 5vh;
-    font-size: large;
-  }
+
   body {
     height: 1000px;
   }
@@ -112,15 +112,23 @@ footer {
     padding-left: 2vh;
     height: 200vh;
   }
-  a {
-    display: none;
-  }
+
   .ico {
-    display: block;
+    display: inline-block;
   }
-  .ico:hover {
-    /* padding: 20px; */
-    display: none;
+  span {
+    visibility: hidden; /* Keep links hidden by default */
+    /* Fully transparent */
+  }
+  #title {
+    visibility: visible;
+    padding-left: 5vh;
+    font-size: large;
+  }
+  .ico:hover + span,
+  span:hover {
+    visibility: visible; /* Show links on hover */
+    /* Fully opaque */
   }
   section {
     height: 100vh;
